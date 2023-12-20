@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int faktoriyel(int sayim){
+	int i;
+	int sonuc=1;
+	
+	for(i=1;i<=sayim;i++){
+		sonuc=sonuc*i;
+	}
+	return sonuc;
+}
+
+
+
+
+
+
+
+
+
+int main(){
+	
+	int a;
+	printf("Lutfen faktoriyelinin alinmasini istediginiz sayiyi giriniz: ");
+	scanf("%d",&a);
+	printf("%d nin faktoriyeli = %d",a,faktoriyel(a));
+}
